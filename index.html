@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>د. محمد فرج | استشاري جراحة الفم وزراعة الأسنان</title>
+    <link rel="icon" href="https://e.top4top.io/p_36542s8cb1.jpg" />
+    <link rel="apple-touch-icon" href="https://e.top4top.io/p_36542s8cb1.jpg" />
+    <meta name="description" content="عيادة د. محمد فرج في التجمع الأول. استشاري جراحة الفم وزراعة الأسنان. مكانك المضمون لزراعة وتجميل وعلاج الأسنان بأحدث الأجهزة وبكل راحة." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              medical: {
+                50: '#f9fafb',
+                100: '#f3f4f6',
+                primary: '#1c1917', // Stone 900
+                secondary: '#a8a29e', // Stone 400
+                accent: '#d97706', // Amber 600
+                surface: '#fafaf9', // Stone 50
+              }
+            },
+            fontFamily: {
+              sans: ['"Cairo"', 'sans-serif'],
+              serif: ['"Cairo"', 'serif'], // Using Cairo for headings too as it works well for both
+            },
+            animation: {
+              'scroll': 'scroll 40s linear infinite', // Faster duration for smoother loop, adjusted in component
+              'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+              'pulse-ring': 'pulseRing 3s cubic-bezier(0.24, 0, 0.38, 1) infinite',
+              'shimmer': 'shimmer 2s linear infinite',
+              'float': 'float 3s ease-in-out infinite',
+            },
+            keyframes: {
+              scroll: {
+                '0%': { transform: 'translateX(0)' },
+                '100%': { transform: 'translateX(50%)' }, // Moves exactly half (one full set width) to create seamless loop in RTL
+              },
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              pulseRing: {
+                '0%': { boxShadow: '0 0 0 0 rgba(217, 119, 6, 0.7)' },
+                '70%': { boxShadow: '0 0 0 15px rgba(217, 119, 6, 0)' },
+                '100%': { boxShadow: '0 0 0 0 rgba(217, 119, 6, 0)' },
+              },
+              shimmer: {
+                '0%': { transform: 'translateX(-100%)' },
+                '100%': { transform: 'translateX(100%)' },
+              },
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-5px)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      html { 
+        scroll-behavior: smooth; 
+        /* This ensures the fixed navbar doesn't cover the section title when clicking a link */
+        scroll-padding-top: 100px; 
+      }
+      body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+      /* Hide scrollbar for review container */
+      .no-scrollbar::-webkit-scrollbar {
+          display: none;
+      }
+      .no-scrollbar {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+      }
+      /* Utility for pausing animation on hover */
+      .hover-pause:hover, .hover-pause:active, .hover-pause:focus-within {
+        animation-play-state: paused !important;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-medical-surface text-stone-800 font-sans">
+    <div id="root"></div>
+  </body>
+</html>
